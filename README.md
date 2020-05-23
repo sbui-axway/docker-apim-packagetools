@@ -14,4 +14,4 @@ docker build -t apigw-client:7.7.20200330 .
 docker run --name builder -d  -e AZP_URL=https://dev.azure.com/<USER>/ -e AZP_TOKEN=<PAT> -e AZP_AGENT_NAME=fed_builder apigw-client:7.7.20200330  
 ```
 5. Once the container is started, the agent must appear in azure devops 
-![container agent](https://octodex.github.com/images/yaktocat.png)
+![container agent](https://github.com/sbui-axway/docker-apim-packagetools/blob/master/images/container_agent.jpg)
