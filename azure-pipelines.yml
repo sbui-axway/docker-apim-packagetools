@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '414ddffa-6500-4311-a4de-36edccee121c'
-  imageRepository: 'rapimpackagetools'
+  imageRepository: 'apimpackagetools'
   containerRegistry: 'apimemt.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
