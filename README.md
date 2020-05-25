@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/sbui/apim-emt/_apis/build/status/sbui-axway.docker-apim-packagetools?branchName=master)](https://dev.azure.com/sbui/apim-emt/_build/latest?definitionId=3&branchName=master)
+![Build Status](https://dev.azure.com/sbui/apim-emt/_apis/build/status/sbui-axway.docker-apim-packagetools?branchName=master)
 
 # docker-apim-packagetools
 
