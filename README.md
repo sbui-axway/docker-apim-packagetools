@@ -1,5 +1,5 @@
-![Build Status](https://dev.azure.com/sbui/apim-emt/_apis/build/status/sbui-axway.docker-apim-packagetools?branchName=master)
-![container agent](https://github.com/sbui-axway/docker-apim-packagetools/blob/master/images/container_agent.jpg)
+
+![container agent](https://dev.azure.com/sbui/apim-emt/_apis/build/status/sbui-axway.docker-apim-packagetools?branchName=master)
 
 # docker-apim-packagetools
 
