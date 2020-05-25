@@ -1,7 +1,7 @@
 FROM centos:7 as builder
 
 
-COPY APIGateway_Install.run /opt/APIGateway_Install.run
+COPY ./APIGateway_Install.run /opt/APIGateway_Install.run
 COPY scripts/runInstall.sh /opt/runInstall.sh
 RUN chmod +x /opt/runInstall.sh && /opt/runInstall.sh 
 
