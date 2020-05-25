@@ -37,11 +37,10 @@ stages:
         vstsFeedPackage: 'c5178fbc-376a-433d-b3a1-1cdae1947222'
         vstsPackageVersion: '7.7.20200330'
     - task: Docker@2
-      displayName: Build and push an image to container registry
       inputs:
-        command: buildAndPush
+        containerRegistry: $(dockerRegistryServiceConnection)
+        command: 'build'
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
-        containerRegistry: $(dockerRegistryServiceConnection)
-        tags: |
-          $(tag)
+        arguments: '--build-arg $(System.DefaultWorkingDirectory)'
+    
