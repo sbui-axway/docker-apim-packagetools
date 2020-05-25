@@ -1,6 +1,7 @@
+![Build Status](https://dev.azure.com/sbui/apim-emt/_apis/build/status/sbui-axway.docker-apim-packagetools?branchName=master)
+![container agent](https://github.com/sbui-axway/docker-apim-packagetools/blob/master/images/container_agent.jpg)
 
 # docker-apim-packagetools
-![Build Status](https://dev.azure.com/sbui/apim-emt/_apis/build/status/sbui-axway.docker-apim-packagetools?branchName=master)
 
 This repository allow to create a azure devops container agent, containing the axway apim package deploy tools, in order to build a apim archive ( FED, POL).
 
