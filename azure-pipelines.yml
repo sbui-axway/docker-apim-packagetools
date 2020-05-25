@@ -42,7 +42,7 @@ stages:
         command: 'buildAndPush'
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
-        buildContext: '$(System.DefaultWorkingDirectory)'
+        buildContext: '$(Build.Repository.LocalPath)'
         tags: |
           $(tag)
     
