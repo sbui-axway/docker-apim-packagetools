@@ -20,14 +20,6 @@ variables:
   vmImageName: 'ubuntu-latest'
 
 stages:
-- task: UniversalPackages@0
-  inputs:
-    command: 'download'
-    downloadDirectory: '$(System.DefaultWorkingDirectory)'
-    feedsToUse: 'internal'
-    vstsFeed: '878c65e7-0897-4085-87c3-357a72b45fb1/31e859cf-4f29-490c-9e3f-556992b09855'
-    vstsFeedPackage: 'c5178fbc-376a-433d-b3a1-1cdae1947222'
-    vstsPackageVersion: '7.7.20200330'
 - stage: Build
   displayName: Build and push stage
   jobs:  
@@ -36,6 +28,14 @@ stages:
     pool:
       vmImage: $(vmImageName)
     steps:
+    - task: UniversalPackages@0
+      inputs:
+        command: 'download'
+        downloadDirectory: '$(System.DefaultWorkingDirectory)'
+        feedsToUse: 'internal'
+        vstsFeed: '878c65e7-0897-4085-87c3-357a72b45fb1/31e859cf-4f29-490c-9e3f-556992b09855'
+        vstsFeedPackage: 'c5178fbc-376a-433d-b3a1-1cdae1947222'
+        vstsPackageVersion: '7.7.20200330'
     - task: Docker@2
       displayName: Build and push an image to container registry
       inputs:
