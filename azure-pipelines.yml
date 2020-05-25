@@ -38,11 +38,12 @@ stages:
         vstsPackageVersion: '7.7.20200330'
     - task: Docker@2
       inputs:
-        containerRegistry: $(dockerRegistryServiceConnection)
+        containerRegistry: '$(dockerRegistryServiceConnection)'
+        repository: '$(imageRepository)'
         command: 'buildAndPush'
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
-        buildContext: '$(Build.Repository.LocalPath)'
+        buildContext: '$(System.DefaultWorkingDirectory)'
         tags: |
           $(tag)
     
