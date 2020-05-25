@@ -41,7 +41,6 @@ stages:
         containerRegistry: '$(dockerRegistryServiceConnection)'
         repository: '$(imageRepository)'
         command: 'buildAndPush'
-        repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
         buildContext: '$(System.DefaultWorkingDirectory)'
         tags: |
